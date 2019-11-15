@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>::: ระบบพัสดุไปรษณีย์วัดพระธรรมกาย :::</title>
+<style type="text/css">
+<!--
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #0000FF;
+}
+a:hover {
+	color: #FF00FF;
+}
+-->
+</style>
+
+<link rel="stylesheet" href="script/jquery-ui.css" type="text/css" media="all" />
+<!-- ���¡��� css �ͧ jquery ui -->
+
+<script src="script/jquery.min.js" type="text/javascript"></script>
+<!-- ���¡��� jquery -->
+<script src="script/jquery-ui.min.js" type="text/javascript"></script>
+ <style>
+.ui-autocomplete-loading {
+background: white url('ui-anim_basic_16x16.gif') right center no-repeat;/*�ʴ������Ŵ*/
+}
+.ui-corner-all{
+font-size:14px; 
+}
+</style>
+<script>
+ $(function() {
+$( "#allname_std" ).autocomplete({//��˹����ӧҹ��� ����-ʡ�� ����ҡ�˹� id ��� Input ���� emp_name
+source: "employee_show.php",//���¡�����Ũҡ��� employee_show.php �¨���params ���� term 仴���
+minLength: 2,//�ӧҹ����;�������� 2 ����ѡ�â���
+select: function( event, ui ) {//����͡����͡��� Auto Complete ������ʴ� Auto Fill � Input ��ҧ�ѧ���
+	$('#id_std').val(ui.item.id_std);
+ 
+
+}
+})
+});
+</script>
+
+
+<script>
+ $(function() {
+$( "#allname_user" ).autocomplete({//��˹����ӧҹ��� ����-ʡ�� ����ҡ�˹� id ��� Input ���� emp_name
+source: "employee_show1.php",//���¡�����Ũҡ��� employee_show.php �¨���params ���� term 仴���
+minLength: 2,//�ӧҹ����;�������� 2 ����ѡ�â���
+select: function( event, ui ) {//����͡����͡��� Auto Complete ������ʴ� Auto Fill � Input ��ҧ�ѧ���
+	$('#id_user').val(ui.item.id_user);
+ 
+
+}
+})
+});
+</script>
+
+
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.10.offset.datepicker.min.js"></script>
+		<script type="text/javascript">
+		  $(function () {
+		    var d = new Date();
+		    var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
+
+
+		    // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
+
+		    $("#datepicker-th").datepicker({ dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay, dayNames: ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'],
+              dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+              monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+              monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+
+		   
+
+     		    $("#datepicker-en").datepicker({ dateFormat: 'dd/mm/yy'});
+
+		    $("#inline").datepicker({ dateFormat: 'dd/mm/yy', inline: true });
+
+
+			});
+		</script>
+		<style type="text/css">
+
+			.demoHeaders { margin-top: 2em; }
+			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}
+			ul.test {list-style:none; line-height:30px;}
+		</style>	
+
+
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.button3 {border-radius: 8px;}
+
+</style>
+
+<style type="text/css">
+	<!--
+		input.largerCheckbox
+		{
+			width: 30px;
+			height: 30px;
+
+		}
+
+	//-->
+</style>
+
+
+</head>
+<body>
+	<div align="center">
+<table border=0 width=100%>
+  <tr><td cellpading=0 cellspacing=0><!--<img src=/images/bannernew1.jpg>--></td></tr>
+		<tr><td cellpading=0 cellspacing=0 align="center">
+
+        	
+  </td></tr>
+  <tr><td>
+<center><b><a href=main.php>หน้าหลัก</a> | <a href=logout.php>ออกจากระบบ</a>  
+ </b></center>
+</td></tr>
+</table>
+
+<!--
+
+<img src=images/logo.jpg>
+<table width=70%>
+<tr><td>
+<center><b><a href=index.php><img src=images/index.jpg border=0></a><a href=main.php><img src=images/homebut.jpg border=0></a><a href=logout.php><img src=images/logoutbut.jpg border=0></a> <a href=editregister3.php>แก้ไขข้อมูลส่วนตัว</a> 
+ </b></center>
+</td></tr>
+</table>
+-->
+
+<br>
+</center>
+<?php
+error_reporting (E_ALL ^ E_NOTICE);
+
+?>
